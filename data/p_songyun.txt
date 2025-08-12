@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta charset="utf-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: "\2610"; }
+li.checked::marker { content: "\2612"; }
+</style></head><body style=" font-family:'Sans Serif Collection'; font-size:11pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:9pt;">A bubbly but volatile entertainer at the Jade Garden teahouse. Her appearance and singing voice are extraordinary, though she lacked the education and refinement to make it far. She lived in the early days of Taiyue, back when the Aeons' intentions were still unclear.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:9pt;">Songyun was born in the northern territory of Yanghai to a couple with little money or affection for their child. She spent her youth pickpocketing and singing in the streets, until she was noticed at fifteen by a retired courtesan who saw potential in her voice.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:9pt;">Songyun was happy to leave home without a word, becoming one of the courtesan's many apprentices. She was taught how to sing, dance, and play instruments. She was taught to compose poetry, as was expected of all respectable entertainers; however, due to her lack of education she was far behind her peers in that field.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:9pt;">At the reccomendation of her teacher's affiliate, she was sent at nineteen to work at a teahouse in a city she had never heard of before. Upon arriving in Taiyue, she begins working at the Jade Garden teahouse, where she is popular among clients due to her attitude and voice. She gains a reputation for being deceptively sweet; irresistible, until she becomes comfortable with you.</span></p></body></html>
