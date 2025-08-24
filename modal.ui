@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>414</width>
-    <height>374</height>
+    <width>574</width>
+    <height>441</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,22 +20,13 @@ background-color:rgb(177, 177, 177);
 
 QPushButton{
 color:black;
-background-color:rgb(177, 177, 177);
+background-color:#e6e6e6;
 font: 9pt &quot;Sans Serif Collection&quot;;
-border-left: 1px white solid;
-border-top: 1px white solid;
-border-right: 1px gray solid;
-border-bottom: 1px gray solid;
-border-style:solid;
+border-radius:5px;
 }
 
 QPushButton:pressed{
 background-color:gray;
-border-right: 1px white solid;
-border-bottom: 1px white solid;
-border-left: 1px black solid;
-border-top: 1px black solid;
-border-style:solid;
 }
 </string>
   </property>
@@ -57,6 +48,7 @@ border-style:solid;
      </property>
      <property name="styleSheet">
       <string notr="true">background-color:white;
+text-align:center;
 </string>
      </property>
      <property name="frameShape">
@@ -85,8 +77,8 @@ border-style:solid;
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>354</width>
-        <height>362</height>
+        <width>514</width>
+        <height>429</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -96,7 +88,8 @@ border-style:solid;
        </sizepolicy>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(177, 177, 177);</string>
+       <string notr="true">background-color:rgb(177, 177, 177);
+text-align:center;</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="leftMargin">
@@ -121,13 +114,14 @@ border-style:solid;
          </property>
          <property name="styleSheet">
           <string notr="true">border:0;
-background-color:blue</string>
+background-color:blue;
+text-align:center;</string>
          </property>
          <property name="lineWidth">
           <number>0</number>
          </property>
          <property name="text">
-          <string>TextLabel</string>
+          <string>help</string>
          </property>
         </widget>
        </item>

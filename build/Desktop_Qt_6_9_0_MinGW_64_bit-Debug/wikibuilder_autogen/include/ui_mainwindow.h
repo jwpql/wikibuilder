@@ -23,7 +23,6 @@
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
@@ -56,50 +55,79 @@ public:
     QStackedWidget *stackedWidget;
     QWidget *Title;
     QGridLayout *gridLayout_2;
+    QWidget *widget_10;
+    QVBoxLayout *verticalLayout_12;
+    QWidget *widget_12;
+    QGridLayout *gridLayout_8;
+    QPushButton *italicBtn_2;
+    QPushButton *centerBtn_2;
+    QFrame *line_9;
+    QPushButton *leftBtn_2;
+    QWidget *widget_13;
+    QVBoxLayout *verticalLayout_11;
+    QLabel *label_3;
+    QLineEdit *textSize_2;
+    QPushButton *underlineBtn_2;
+    QPushButton *redBtn_2;
+    QPushButton *blackBtn_2;
+    QPushButton *pinkBtn_2;
+    QPushButton *orangeBtn_2;
+    QLabel *label_4;
+    QFrame *line_11;
+    QLineEdit *colorLine_2;
+    QPushButton *greenBtn_2;
+    QPushButton *yellowBtn_2;
+    QPushButton *purpleBtn_2;
+    QPushButton *grayBtn_2;
+    QPushButton *boldBtn_2;
+    QFrame *line_10;
+    QPushButton *rightBtn_2;
+    QPushButton *brownBtn_2;
+    QPushButton *blueBtn_2;
+    QPushButton *TitleSave;
     QPushButton *TitleDiscard;
     QTextEdit *TitleText;
-    QPushButton *TitleSave;
+    QPushButton *homeEditBtn;
     QWidget *Page;
     QGridLayout *gridLayout_5;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_8;
+    QWidget *widget_8;
+    QGridLayout *gridLayout_7;
+    QPushButton *brownBtn;
+    QWidget *widget_9;
+    QVBoxLayout *verticalLayout_9;
+    QLabel *label;
+    QLineEdit *textSize;
+    QLineEdit *colorLine;
+    QPushButton *greenBtn;
+    QPushButton *underlineBtn;
+    QPushButton *redBtn;
+    QFrame *line_8;
+    QFrame *line_5;
+    QLabel *label_2;
+    QPushButton *yellowBtn;
+    QPushButton *pinkBtn;
+    QPushButton *italicBtn;
+    QFrame *line_4;
+    QPushButton *grayBtn;
+    QPushButton *purpleBtn;
+    QPushButton *orangeBtn;
+    QPushButton *blackBtn;
+    QPushButton *boldBtn;
+    QPushButton *blueBtn;
+    QPushButton *centerBtn;
+    QPushButton *leftBtn;
+    QPushButton *rightBtn;
+    QPushButton *PageDiscard;
+    QPushButton *PageSave;
+    QPushButton *pushButton;
     QWidget *widget_2;
     QVBoxLayout *verticalLayout_4;
     QTextEdit *PageTitle;
     QFrame *PageLine;
     QTextEdit *PageText;
-    QWidget *widget;
-    QVBoxLayout *verticalLayout_8;
-    QPushButton *pushButton;
-    QWidget *widget_8;
-    QGridLayout *gridLayout_7;
-    QPushButton *orangeBtn;
-    QPushButton *purpleBtn;
-    QWidget *widget_9;
-    QVBoxLayout *verticalLayout_9;
-    QLabel *label;
-    QLineEdit *textSize;
-    QPushButton *pinkBtn;
-    QPushButton *brownBtn;
-    QPushButton *blueBtn;
-    QFrame *line_4;
-    QPushButton *greenBtn;
-    QPushButton *grayBtn;
-    QFrame *line_5;
-    QWidget *widget_10;
-    QGridLayout *gridLayout_8;
-    QPushButton *underlineBtn;
-    QPushButton *boldBtn;
-    QPushButton *italicBtn;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    QLabel *label_2;
-    QLineEdit *colorLine;
-    QPushButton *redBtn;
-    QPushButton *yellowBtn;
-    QPushButton *blackBtn;
-    QSpacerItem *verticalSpacer;
-    QPushButton *PageDiscard;
-    QPushButton *PageSave;
+    QPushButton *editPgBtn;
     QWidget *Sitemap;
     QGridLayout *gridLayout_6;
     QWidget *widget_6;
@@ -161,7 +189,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->setEnabled(true);
-        MainWindow->resize(510, 541);
+        MainWindow->resize(503, 546);
         QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -170,46 +198,37 @@ public:
         MainWindow->setStyleSheet(QString::fromUtf8("background-color:rgb(177, 177, 177)"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        centralwidget->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+        centralwidget->setStyleSheet(QString::fromUtf8("Line{\n"
+"border-top: 1px solid gray\n"
+"}\n"
+"\n"
+"QPushButton{\n"
 "color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
+"background-color:rgb(230, 230, 230);\n"
 "font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
+"border-radius:5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
 "background-color:gray;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-left: 1px black solid;\n"
-"border-top: 1px black solid;\n"
-"border-style:solid;\n"
 "}\n"
 "\n"
 "QListWidget{\n"
 "color:black;\n"
 "background-color:white;\n"
 "font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;}\n"
+"border-radius: 5px;\n"
+"}\n"
+"\n"
+"QListView::item:selected { \n"
+"background-color:rgb(221, 221, 221);\n"
+" }\n"
 "\n"
 "QLineEdit{\n"
 "color:black;\n"
 "background-color:white;\n"
 "font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px g"
-                        "ray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;\n"
+"border-radius:5px;\n"
 "}\n"
 "\n"
 "QListWidget{\n"
@@ -317,24 +336,7 @@ public:
         sizePolicy3.setVerticalStretch(1);
         sizePolicy3.setHeightForWidth(LeftButton->sizePolicy().hasHeightForWidth());
         LeftButton->setSizePolicy(sizePolicy3);
-        LeftButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"background-color:gray;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-left: 1px black solid;\n"
-"border-top: 1px black solid;\n"
-"border-style:solid;\n"
-"}"));
+        LeftButton->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout->addWidget(LeftButton);
 
@@ -342,24 +344,7 @@ public:
         RightButton->setObjectName("RightButton");
         sizePolicy3.setHeightForWidth(RightButton->sizePolicy().hasHeightForWidth());
         RightButton->setSizePolicy(sizePolicy3);
-        RightButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"background-color:gray;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-left: 1px black solid;\n"
-"border-top: 1px black solid;\n"
-"border-style:solid;\n"
-"}"));
+        RightButton->setStyleSheet(QString::fromUtf8(""));
 
         horizontalLayout->addWidget(RightButton);
 
@@ -376,72 +361,571 @@ public:
         sizePolicy4.setVerticalStretch(4);
         sizePolicy4.setHeightForWidth(stackedWidget->sizePolicy().hasHeightForWidth());
         stackedWidget->setSizePolicy(sizePolicy4);
-        stackedWidget->setStyleSheet(QString::fromUtf8(""));
+        stackedWidget->setStyleSheet(QString::fromUtf8("border-radius:5px;"));
         Title = new QWidget();
         Title->setObjectName("Title");
         gridLayout_2 = new QGridLayout(Title);
         gridLayout_2->setObjectName("gridLayout_2");
-        TitleDiscard = new QPushButton(Title);
-        TitleDiscard->setObjectName("TitleDiscard");
-        QSizePolicy sizePolicy5(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Fixed);
-        sizePolicy5.setHorizontalStretch(1);
+        widget_10 = new QWidget(Title);
+        widget_10->setObjectName("widget_10");
+        QSizePolicy sizePolicy5(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Preferred);
+        sizePolicy5.setHorizontalStretch(0);
         sizePolicy5.setVerticalStretch(0);
-        sizePolicy5.setHeightForWidth(TitleDiscard->sizePolicy().hasHeightForWidth());
-        TitleDiscard->setSizePolicy(sizePolicy5);
+        sizePolicy5.setHeightForWidth(widget_10->sizePolicy().hasHeightForWidth());
+        widget_10->setSizePolicy(sizePolicy5);
+        widget_10->setStyleSheet(QString::fromUtf8("QWidget{\n"
+"color:black;\n"
+"background-color:rgb(206, 206, 206);\n"
+"font: 9pt \"Sans Serif Collection\";\n"
+"border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"color:black;\n"
+"background-color:#e6e6e6;\n"
+"font: 9pt \"Sans Serif Collection\";\n"
+"border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"background-color:gray;\n"
+"}"));
+        verticalLayout_12 = new QVBoxLayout(widget_10);
+        verticalLayout_12->setObjectName("verticalLayout_12");
+        widget_12 = new QWidget(widget_10);
+        widget_12->setObjectName("widget_12");
+        widget_12->setStyleSheet(QString::fromUtf8(""));
+        gridLayout_8 = new QGridLayout(widget_12);
+        gridLayout_8->setObjectName("gridLayout_8");
+        italicBtn_2 = new QPushButton(widget_12);
+        italicBtn_2->setObjectName("italicBtn_2");
+        italicBtn_2->setStyleSheet(QString::fromUtf8("font-style:italic;"));
+
+        gridLayout_8->addWidget(italicBtn_2, 4, 1, 1, 1);
+
+        centerBtn_2 = new QPushButton(widget_12);
+        centerBtn_2->setObjectName("centerBtn_2");
+
+        gridLayout_8->addWidget(centerBtn_2, 5, 1, 1, 1);
+
+        line_9 = new QFrame(widget_12);
+        line_9->setObjectName("line_9");
+        line_9->setFrameShape(QFrame::Shape::HLine);
+        line_9->setFrameShadow(QFrame::Shadow::Sunken);
+
+        gridLayout_8->addWidget(line_9, 16, 0, 1, 2);
+
+        leftBtn_2 = new QPushButton(widget_12);
+        leftBtn_2->setObjectName("leftBtn_2");
+
+        gridLayout_8->addWidget(leftBtn_2, 6, 0, 1, 1);
+
+        widget_13 = new QWidget(widget_12);
+        widget_13->setObjectName("widget_13");
+        QSizePolicy sizePolicy6(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Maximum);
+        sizePolicy6.setHorizontalStretch(0);
+        sizePolicy6.setVerticalStretch(0);
+        sizePolicy6.setHeightForWidth(widget_13->sizePolicy().hasHeightForWidth());
+        widget_13->setSizePolicy(sizePolicy6);
+        widget_13->setStyleSheet(QString::fromUtf8("border:0px;"));
+        verticalLayout_11 = new QVBoxLayout(widget_13);
+        verticalLayout_11->setObjectName("verticalLayout_11");
+        label_3 = new QLabel(widget_13);
+        label_3->setObjectName("label_3");
+        sizePolicy2.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
+        label_3->setSizePolicy(sizePolicy2);
+        label_3->setStyleSheet(QString::fromUtf8("border:0;\n"
+"font: 8pt \"Sans Serif Collection\";"));
+
+        verticalLayout_11->addWidget(label_3);
+
+        textSize_2 = new QLineEdit(widget_13);
+        textSize_2->setObjectName("textSize_2");
+        QSizePolicy sizePolicy7(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
+        sizePolicy7.setHorizontalStretch(0);
+        sizePolicy7.setVerticalStretch(0);
+        sizePolicy7.setHeightForWidth(textSize_2->sizePolicy().hasHeightForWidth());
+        textSize_2->setSizePolicy(sizePolicy7);
+        textSize_2->setMinimumSize(QSize(20, 0));
+        textSize_2->setMaximumSize(QSize(50, 20));
+        textSize_2->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        textSize_2->setInputMethodHints(Qt::InputMethodHint::ImhDigitsOnly|Qt::InputMethodHint::ImhFormattedNumbersOnly);
+
+        verticalLayout_11->addWidget(textSize_2);
+
+
+        gridLayout_8->addWidget(widget_13, 0, 0, 1, 2);
+
+        underlineBtn_2 = new QPushButton(widget_12);
+        underlineBtn_2->setObjectName("underlineBtn_2");
+        underlineBtn_2->setStyleSheet(QString::fromUtf8("text-decoration:underline;"));
+
+        gridLayout_8->addWidget(underlineBtn_2, 5, 0, 1, 1);
+
+        redBtn_2 = new QPushButton(widget_12);
+        redBtn_2->setObjectName("redBtn_2");
+        sizePolicy7.setHeightForWidth(redBtn_2->sizePolicy().hasHeightForWidth());
+        redBtn_2->setSizePolicy(sizePolicy7);
+        redBtn_2->setMaximumSize(QSize(20, 20));
+        redBtn_2->setStyleSheet(QString::fromUtf8("background-color:red;"));
+
+        gridLayout_8->addWidget(redBtn_2, 8, 0, 1, 1);
+
+        blackBtn_2 = new QPushButton(widget_12);
+        blackBtn_2->setObjectName("blackBtn_2");
+        sizePolicy7.setHeightForWidth(blackBtn_2->sizePolicy().hasHeightForWidth());
+        blackBtn_2->setSizePolicy(sizePolicy7);
+        blackBtn_2->setMaximumSize(QSize(20, 20));
+        blackBtn_2->setStyleSheet(QString::fromUtf8("background-color:black;"));
+
+        gridLayout_8->addWidget(blackBtn_2, 12, 0, 1, 1);
+
+        pinkBtn_2 = new QPushButton(widget_12);
+        pinkBtn_2->setObjectName("pinkBtn_2");
+        sizePolicy7.setHeightForWidth(pinkBtn_2->sizePolicy().hasHeightForWidth());
+        pinkBtn_2->setSizePolicy(sizePolicy7);
+        pinkBtn_2->setMaximumSize(QSize(20, 20));
+        pinkBtn_2->setStyleSheet(QString::fromUtf8("background-color:pink;"));
+
+        gridLayout_8->addWidget(pinkBtn_2, 11, 0, 1, 1);
+
+        orangeBtn_2 = new QPushButton(widget_12);
+        orangeBtn_2->setObjectName("orangeBtn_2");
+        orangeBtn_2->setMaximumSize(QSize(20, 20));
+        orangeBtn_2->setStyleSheet(QString::fromUtf8("background-color:orange"));
+
+        gridLayout_8->addWidget(orangeBtn_2, 8, 1, 1, 1);
+
+        label_4 = new QLabel(widget_12);
+        label_4->setObjectName("label_4");
+        sizePolicy2.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
+        label_4->setSizePolicy(sizePolicy2);
+        label_4->setStyleSheet(QString::fromUtf8("border:0;\n"
+"font: 8pt \"Sans Serif Collection\";"));
+
+        gridLayout_8->addWidget(label_4, 13, 0, 1, 2);
+
+        line_11 = new QFrame(widget_12);
+        line_11->setObjectName("line_11");
+        line_11->setStyleSheet(QString::fromUtf8("border-left:0;\n"
+"border-right:0;\n"
+"border-bottom:0;"));
+        line_11->setFrameShape(QFrame::Shape::HLine);
+        line_11->setFrameShadow(QFrame::Shadow::Sunken);
+
+        gridLayout_8->addWidget(line_11, 7, 0, 1, 2);
+
+        colorLine_2 = new QLineEdit(widget_12);
+        colorLine_2->setObjectName("colorLine_2");
+        colorLine_2->setStyleSheet(QString::fromUtf8("font: 9pt \"Sans Serif Collection\";\n"
+"background-color:white;"));
+
+        gridLayout_8->addWidget(colorLine_2, 14, 0, 1, 2);
+
+        greenBtn_2 = new QPushButton(widget_12);
+        greenBtn_2->setObjectName("greenBtn_2");
+        sizePolicy7.setHeightForWidth(greenBtn_2->sizePolicy().hasHeightForWidth());
+        greenBtn_2->setSizePolicy(sizePolicy7);
+        greenBtn_2->setMaximumSize(QSize(20, 20));
+        greenBtn_2->setStyleSheet(QString::fromUtf8("background-color:green;"));
+
+        gridLayout_8->addWidget(greenBtn_2, 9, 1, 1, 1);
+
+        yellowBtn_2 = new QPushButton(widget_12);
+        yellowBtn_2->setObjectName("yellowBtn_2");
+        sizePolicy7.setHeightForWidth(yellowBtn_2->sizePolicy().hasHeightForWidth());
+        yellowBtn_2->setSizePolicy(sizePolicy7);
+        yellowBtn_2->setMaximumSize(QSize(20, 20));
+        yellowBtn_2->setStyleSheet(QString::fromUtf8("background-color:yellow"));
+
+        gridLayout_8->addWidget(yellowBtn_2, 9, 0, 1, 1);
+
+        purpleBtn_2 = new QPushButton(widget_12);
+        purpleBtn_2->setObjectName("purpleBtn_2");
+        sizePolicy7.setHeightForWidth(purpleBtn_2->sizePolicy().hasHeightForWidth());
+        purpleBtn_2->setSizePolicy(sizePolicy7);
+        purpleBtn_2->setMaximumSize(QSize(20, 20));
+        purpleBtn_2->setStyleSheet(QString::fromUtf8("background-color:purple"));
+
+        gridLayout_8->addWidget(purpleBtn_2, 10, 1, 1, 1);
+
+        grayBtn_2 = new QPushButton(widget_12);
+        grayBtn_2->setObjectName("grayBtn_2");
+        sizePolicy7.setHeightForWidth(grayBtn_2->sizePolicy().hasHeightForWidth());
+        grayBtn_2->setSizePolicy(sizePolicy7);
+        grayBtn_2->setMaximumSize(QSize(20, 20));
+        grayBtn_2->setStyleSheet(QString::fromUtf8("background-color:gray;"));
+
+        gridLayout_8->addWidget(grayBtn_2, 12, 1, 1, 1);
+
+        boldBtn_2 = new QPushButton(widget_12);
+        boldBtn_2->setObjectName("boldBtn_2");
+        boldBtn_2->setStyleSheet(QString::fromUtf8("font-weight:bold;"));
+
+        gridLayout_8->addWidget(boldBtn_2, 4, 0, 1, 1);
+
+        line_10 = new QFrame(widget_12);
+        line_10->setObjectName("line_10");
+        line_10->setStyleSheet(QString::fromUtf8("border-left:0;\n"
+"border-right:0;\n"
+"border-bottom:0;"));
+        line_10->setFrameShape(QFrame::Shape::HLine);
+        line_10->setFrameShadow(QFrame::Shadow::Sunken);
+
+        gridLayout_8->addWidget(line_10, 1, 0, 1, 2);
+
+        rightBtn_2 = new QPushButton(widget_12);
+        rightBtn_2->setObjectName("rightBtn_2");
+
+        gridLayout_8->addWidget(rightBtn_2, 6, 1, 1, 1);
+
+        brownBtn_2 = new QPushButton(widget_12);
+        brownBtn_2->setObjectName("brownBtn_2");
+        sizePolicy7.setHeightForWidth(brownBtn_2->sizePolicy().hasHeightForWidth());
+        brownBtn_2->setSizePolicy(sizePolicy7);
+        brownBtn_2->setMaximumSize(QSize(20, 20));
+        brownBtn_2->setStyleSheet(QString::fromUtf8("background-color:brown;"));
+
+        gridLayout_8->addWidget(brownBtn_2, 11, 1, 1, 1);
+
+        blueBtn_2 = new QPushButton(widget_12);
+        blueBtn_2->setObjectName("blueBtn_2");
+        sizePolicy7.setHeightForWidth(blueBtn_2->sizePolicy().hasHeightForWidth());
+        blueBtn_2->setSizePolicy(sizePolicy7);
+        blueBtn_2->setMaximumSize(QSize(20, 20));
+        blueBtn_2->setStyleSheet(QString::fromUtf8("background-color:blue;"));
+
+        gridLayout_8->addWidget(blueBtn_2, 10, 0, 1, 1);
+
+
+        verticalLayout_12->addWidget(widget_12);
+
+        TitleSave = new QPushButton(widget_10);
+        TitleSave->setObjectName("TitleSave");
+        QSizePolicy sizePolicy8(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Fixed);
+        sizePolicy8.setHorizontalStretch(1);
+        sizePolicy8.setVerticalStretch(0);
+        sizePolicy8.setHeightForWidth(TitleSave->sizePolicy().hasHeightForWidth());
+        TitleSave->setSizePolicy(sizePolicy8);
+        TitleSave->setStyleSheet(QString::fromUtf8(""));
+
+        verticalLayout_12->addWidget(TitleSave);
+
+        TitleDiscard = new QPushButton(widget_10);
+        TitleDiscard->setObjectName("TitleDiscard");
+        sizePolicy8.setHeightForWidth(TitleDiscard->sizePolicy().hasHeightForWidth());
+        TitleDiscard->setSizePolicy(sizePolicy8);
         TitleDiscard->setStyleSheet(QString::fromUtf8(""));
 
-        gridLayout_2->addWidget(TitleDiscard, 1, 3, 1, 2);
+        verticalLayout_12->addWidget(TitleDiscard);
+
+
+        gridLayout_2->addWidget(widget_10, 1, 4, 1, 1);
 
         TitleText = new QTextEdit(Title);
         TitleText->setObjectName("TitleText");
+        QSizePolicy sizePolicy9(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Expanding);
+        sizePolicy9.setHorizontalStretch(0);
+        sizePolicy9.setVerticalStretch(0);
+        sizePolicy9.setHeightForWidth(TitleText->sizePolicy().hasHeightForWidth());
+        TitleText->setSizePolicy(sizePolicy9);
         TitleText->setStyleSheet(QString::fromUtf8("color:black;\n"
 "background-color:white;\n"
-"font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+"border-radius:5px;\n"
+"padding:5px;"));
 
-        gridLayout_2->addWidget(TitleText, 0, 1, 1, 4);
+        gridLayout_2->addWidget(TitleText, 0, 1, 2, 3);
 
-        TitleSave = new QPushButton(Title);
-        TitleSave->setObjectName("TitleSave");
-        sizePolicy5.setHeightForWidth(TitleSave->sizePolicy().hasHeightForWidth());
-        TitleSave->setSizePolicy(sizePolicy5);
-        TitleSave->setStyleSheet(QString::fromUtf8(""));
+        homeEditBtn = new QPushButton(Title);
+        homeEditBtn->setObjectName("homeEditBtn");
+        sizePolicy7.setHeightForWidth(homeEditBtn->sizePolicy().hasHeightForWidth());
+        homeEditBtn->setSizePolicy(sizePolicy7);
+        homeEditBtn->setStyleSheet(QString::fromUtf8("padding-left:30px;\n"
+"padding-right:30px;"));
 
-        gridLayout_2->addWidget(TitleSave, 1, 1, 1, 2);
+        gridLayout_2->addWidget(homeEditBtn, 0, 4, 1, 1);
 
         stackedWidget->addWidget(Title);
         Page = new QWidget();
         Page->setObjectName("Page");
         gridLayout_5 = new QGridLayout(Page);
         gridLayout_5->setObjectName("gridLayout_5");
+        widget = new QWidget(Page);
+        widget->setObjectName("widget");
+        sizePolicy5.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
+        widget->setSizePolicy(sizePolicy5);
+        widget->setMaximumSize(QSize(120, 16777215));
+        widget->setStyleSheet(QString::fromUtf8("QWidget{\n"
+"color:black;\n"
+"background-color:rgb(206, 206, 206);\n"
+"font: 9pt \"Sans Serif Collection\";\n"
+"border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"color:black;\n"
+"background-color:#e6e6e6;\n"
+"font: 9pt \"Sans Serif Collection\";\n"
+"border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"background-color:gray;\n"
+"}"));
+        verticalLayout_8 = new QVBoxLayout(widget);
+        verticalLayout_8->setObjectName("verticalLayout_8");
+        widget_8 = new QWidget(widget);
+        widget_8->setObjectName("widget_8");
+        widget_8->setStyleSheet(QString::fromUtf8(""));
+        gridLayout_7 = new QGridLayout(widget_8);
+        gridLayout_7->setObjectName("gridLayout_7");
+        brownBtn = new QPushButton(widget_8);
+        brownBtn->setObjectName("brownBtn");
+        sizePolicy7.setHeightForWidth(brownBtn->sizePolicy().hasHeightForWidth());
+        brownBtn->setSizePolicy(sizePolicy7);
+        brownBtn->setMaximumSize(QSize(20, 20));
+        brownBtn->setStyleSheet(QString::fromUtf8("background-color:brown;"));
+
+        gridLayout_7->addWidget(brownBtn, 11, 1, 1, 1);
+
+        widget_9 = new QWidget(widget_8);
+        widget_9->setObjectName("widget_9");
+        sizePolicy6.setHeightForWidth(widget_9->sizePolicy().hasHeightForWidth());
+        widget_9->setSizePolicy(sizePolicy6);
+        widget_9->setStyleSheet(QString::fromUtf8("border:0px;"));
+        verticalLayout_9 = new QVBoxLayout(widget_9);
+        verticalLayout_9->setObjectName("verticalLayout_9");
+        label = new QLabel(widget_9);
+        label->setObjectName("label");
+        sizePolicy2.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy2);
+        label->setStyleSheet(QString::fromUtf8("border:0;\n"
+"font: 8pt \"Sans Serif Collection\";"));
+
+        verticalLayout_9->addWidget(label);
+
+        textSize = new QLineEdit(widget_9);
+        textSize->setObjectName("textSize");
+        sizePolicy7.setHeightForWidth(textSize->sizePolicy().hasHeightForWidth());
+        textSize->setSizePolicy(sizePolicy7);
+        textSize->setMinimumSize(QSize(20, 0));
+        textSize->setMaximumSize(QSize(50, 20));
+        textSize->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        textSize->setInputMethodHints(Qt::InputMethodHint::ImhDigitsOnly|Qt::InputMethodHint::ImhFormattedNumbersOnly);
+
+        verticalLayout_9->addWidget(textSize);
+
+
+        gridLayout_7->addWidget(widget_9, 0, 0, 1, 2);
+
+        colorLine = new QLineEdit(widget_8);
+        colorLine->setObjectName("colorLine");
+        colorLine->setStyleSheet(QString::fromUtf8("font: 9pt \"Sans Serif Collection\";\n"
+"background-color:white;"));
+
+        gridLayout_7->addWidget(colorLine, 14, 0, 1, 2);
+
+        greenBtn = new QPushButton(widget_8);
+        greenBtn->setObjectName("greenBtn");
+        sizePolicy7.setHeightForWidth(greenBtn->sizePolicy().hasHeightForWidth());
+        greenBtn->setSizePolicy(sizePolicy7);
+        greenBtn->setMaximumSize(QSize(20, 20));
+        greenBtn->setStyleSheet(QString::fromUtf8("background-color:green;"));
+
+        gridLayout_7->addWidget(greenBtn, 9, 1, 1, 1);
+
+        underlineBtn = new QPushButton(widget_8);
+        underlineBtn->setObjectName("underlineBtn");
+        underlineBtn->setStyleSheet(QString::fromUtf8("text-decoration:underline;"));
+
+        gridLayout_7->addWidget(underlineBtn, 5, 0, 1, 1);
+
+        redBtn = new QPushButton(widget_8);
+        redBtn->setObjectName("redBtn");
+        sizePolicy7.setHeightForWidth(redBtn->sizePolicy().hasHeightForWidth());
+        redBtn->setSizePolicy(sizePolicy7);
+        redBtn->setMaximumSize(QSize(20, 20));
+        redBtn->setStyleSheet(QString::fromUtf8("background-color:red;"));
+
+        gridLayout_7->addWidget(redBtn, 8, 0, 1, 1);
+
+        line_8 = new QFrame(widget_8);
+        line_8->setObjectName("line_8");
+        line_8->setFrameShape(QFrame::Shape::HLine);
+        line_8->setFrameShadow(QFrame::Shadow::Sunken);
+
+        gridLayout_7->addWidget(line_8, 15, 0, 1, 2);
+
+        line_5 = new QFrame(widget_8);
+        line_5->setObjectName("line_5");
+        line_5->setStyleSheet(QString::fromUtf8("border-left:0;\n"
+"border-right:0;\n"
+"border-bottom:0;"));
+        line_5->setFrameShape(QFrame::Shape::HLine);
+        line_5->setFrameShadow(QFrame::Shadow::Sunken);
+
+        gridLayout_7->addWidget(line_5, 1, 0, 1, 2);
+
+        label_2 = new QLabel(widget_8);
+        label_2->setObjectName("label_2");
+        sizePolicy2.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy2);
+        label_2->setStyleSheet(QString::fromUtf8("border:0;\n"
+"font: 8pt \"Sans Serif Collection\";"));
+
+        gridLayout_7->addWidget(label_2, 13, 0, 1, 2);
+
+        yellowBtn = new QPushButton(widget_8);
+        yellowBtn->setObjectName("yellowBtn");
+        sizePolicy7.setHeightForWidth(yellowBtn->sizePolicy().hasHeightForWidth());
+        yellowBtn->setSizePolicy(sizePolicy7);
+        yellowBtn->setMaximumSize(QSize(20, 20));
+        yellowBtn->setStyleSheet(QString::fromUtf8("background-color:yellow"));
+
+        gridLayout_7->addWidget(yellowBtn, 9, 0, 1, 1);
+
+        pinkBtn = new QPushButton(widget_8);
+        pinkBtn->setObjectName("pinkBtn");
+        sizePolicy7.setHeightForWidth(pinkBtn->sizePolicy().hasHeightForWidth());
+        pinkBtn->setSizePolicy(sizePolicy7);
+        pinkBtn->setMaximumSize(QSize(20, 20));
+        pinkBtn->setStyleSheet(QString::fromUtf8("background-color:pink;"));
+
+        gridLayout_7->addWidget(pinkBtn, 11, 0, 1, 1);
+
+        italicBtn = new QPushButton(widget_8);
+        italicBtn->setObjectName("italicBtn");
+        italicBtn->setStyleSheet(QString::fromUtf8("font-style:italic;"));
+
+        gridLayout_7->addWidget(italicBtn, 4, 1, 1, 1);
+
+        line_4 = new QFrame(widget_8);
+        line_4->setObjectName("line_4");
+        line_4->setStyleSheet(QString::fromUtf8("border-left:0;\n"
+"border-right:0;\n"
+"border-bottom:0;"));
+        line_4->setFrameShape(QFrame::Shape::HLine);
+        line_4->setFrameShadow(QFrame::Shadow::Sunken);
+
+        gridLayout_7->addWidget(line_4, 7, 0, 1, 2);
+
+        grayBtn = new QPushButton(widget_8);
+        grayBtn->setObjectName("grayBtn");
+        sizePolicy7.setHeightForWidth(grayBtn->sizePolicy().hasHeightForWidth());
+        grayBtn->setSizePolicy(sizePolicy7);
+        grayBtn->setMaximumSize(QSize(20, 20));
+        grayBtn->setStyleSheet(QString::fromUtf8("background-color:gray;"));
+
+        gridLayout_7->addWidget(grayBtn, 12, 1, 1, 1);
+
+        purpleBtn = new QPushButton(widget_8);
+        purpleBtn->setObjectName("purpleBtn");
+        sizePolicy7.setHeightForWidth(purpleBtn->sizePolicy().hasHeightForWidth());
+        purpleBtn->setSizePolicy(sizePolicy7);
+        purpleBtn->setMaximumSize(QSize(20, 20));
+        purpleBtn->setStyleSheet(QString::fromUtf8("background-color:purple"));
+
+        gridLayout_7->addWidget(purpleBtn, 10, 1, 1, 1);
+
+        orangeBtn = new QPushButton(widget_8);
+        orangeBtn->setObjectName("orangeBtn");
+        orangeBtn->setMaximumSize(QSize(20, 20));
+        orangeBtn->setStyleSheet(QString::fromUtf8("background-color:orange"));
+
+        gridLayout_7->addWidget(orangeBtn, 8, 1, 1, 1);
+
+        blackBtn = new QPushButton(widget_8);
+        blackBtn->setObjectName("blackBtn");
+        sizePolicy7.setHeightForWidth(blackBtn->sizePolicy().hasHeightForWidth());
+        blackBtn->setSizePolicy(sizePolicy7);
+        blackBtn->setMaximumSize(QSize(20, 20));
+        blackBtn->setStyleSheet(QString::fromUtf8("background-color:black;"));
+
+        gridLayout_7->addWidget(blackBtn, 12, 0, 1, 1);
+
+        boldBtn = new QPushButton(widget_8);
+        boldBtn->setObjectName("boldBtn");
+        boldBtn->setStyleSheet(QString::fromUtf8("font-weight:bold;"));
+
+        gridLayout_7->addWidget(boldBtn, 4, 0, 1, 1);
+
+        blueBtn = new QPushButton(widget_8);
+        blueBtn->setObjectName("blueBtn");
+        sizePolicy7.setHeightForWidth(blueBtn->sizePolicy().hasHeightForWidth());
+        blueBtn->setSizePolicy(sizePolicy7);
+        blueBtn->setMaximumSize(QSize(20, 20));
+        blueBtn->setStyleSheet(QString::fromUtf8("background-color:blue;"));
+
+        gridLayout_7->addWidget(blueBtn, 10, 0, 1, 1);
+
+        centerBtn = new QPushButton(widget_8);
+        centerBtn->setObjectName("centerBtn");
+
+        gridLayout_7->addWidget(centerBtn, 5, 1, 1, 1);
+
+        leftBtn = new QPushButton(widget_8);
+        leftBtn->setObjectName("leftBtn");
+
+        gridLayout_7->addWidget(leftBtn, 6, 0, 1, 1);
+
+        rightBtn = new QPushButton(widget_8);
+        rightBtn->setObjectName("rightBtn");
+
+        gridLayout_7->addWidget(rightBtn, 6, 1, 1, 1);
+
+
+        verticalLayout_8->addWidget(widget_8);
+
+        PageDiscard = new QPushButton(widget);
+        PageDiscard->setObjectName("PageDiscard");
+        sizePolicy8.setHeightForWidth(PageDiscard->sizePolicy().hasHeightForWidth());
+        PageDiscard->setSizePolicy(sizePolicy8);
+        PageDiscard->setStyleSheet(QString::fromUtf8("padding:2px;"));
+
+        verticalLayout_8->addWidget(PageDiscard);
+
+        PageSave = new QPushButton(widget);
+        PageSave->setObjectName("PageSave");
+        QSizePolicy sizePolicy10(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Fixed);
+        sizePolicy10.setHorizontalStretch(1);
+        sizePolicy10.setVerticalStretch(0);
+        sizePolicy10.setHeightForWidth(PageSave->sizePolicy().hasHeightForWidth());
+        PageSave->setSizePolicy(sizePolicy10);
+        PageSave->setStyleSheet(QString::fromUtf8("padding:2px;"));
+
+        verticalLayout_8->addWidget(PageSave);
+
+
+        gridLayout_5->addWidget(widget, 2, 1, 4, 1);
+
+        pushButton = new QPushButton(Page);
+        pushButton->setObjectName("pushButton");
+        QSizePolicy sizePolicy11(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Fixed);
+        sizePolicy11.setHorizontalStretch(0);
+        sizePolicy11.setVerticalStretch(0);
+        sizePolicy11.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
+        pushButton->setSizePolicy(sizePolicy11);
+        pushButton->setStyleSheet(QString::fromUtf8("padding-left:5px;\n"
+"padding-right:5px;"));
+
+        gridLayout_5->addWidget(pushButton, 0, 1, 1, 1);
+
         widget_2 = new QWidget(Page);
         widget_2->setObjectName("widget_2");
-        QSizePolicy sizePolicy6(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Expanding);
-        sizePolicy6.setHorizontalStretch(0);
-        sizePolicy6.setVerticalStretch(0);
-        sizePolicy6.setHeightForWidth(widget_2->sizePolicy().hasHeightForWidth());
-        widget_2->setSizePolicy(sizePolicy6);
+        sizePolicy9.setHeightForWidth(widget_2->sizePolicy().hasHeightForWidth());
+        widget_2->setSizePolicy(sizePolicy9);
         widget_2->setStyleSheet(QString::fromUtf8("color:black;\n"
 "background-color:white;\n"
-"font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+""));
         verticalLayout_4 = new QVBoxLayout(widget_2);
         verticalLayout_4->setObjectName("verticalLayout_4");
         PageTitle = new QTextEdit(widget_2);
         PageTitle->setObjectName("PageTitle");
-        QSizePolicy sizePolicy7(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Fixed);
-        sizePolicy7.setHorizontalStretch(0);
-        sizePolicy7.setVerticalStretch(1);
-        sizePolicy7.setHeightForWidth(PageTitle->sizePolicy().hasHeightForWidth());
-        PageTitle->setSizePolicy(sizePolicy7);
+        QSizePolicy sizePolicy12(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Fixed);
+        sizePolicy12.setHorizontalStretch(0);
+        sizePolicy12.setVerticalStretch(1);
+        sizePolicy12.setHeightForWidth(PageTitle->sizePolicy().hasHeightForWidth());
+        PageTitle->setSizePolicy(sizePolicy12);
         PageTitle->setMaximumSize(QSize(16777215, 60));
         PageTitle->setStyleSheet(QString::fromUtf8("color:black;\n"
 "border:0;\n"
@@ -462,11 +946,12 @@ public:
 
         PageText = new QTextEdit(widget_2);
         PageText->setObjectName("PageText");
-        QSizePolicy sizePolicy8(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Preferred);
-        sizePolicy8.setHorizontalStretch(0);
-        sizePolicy8.setVerticalStretch(6);
-        sizePolicy8.setHeightForWidth(PageText->sizePolicy().hasHeightForWidth());
-        PageText->setSizePolicy(sizePolicy8);
+        PageText->setEnabled(true);
+        QSizePolicy sizePolicy13(QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Preferred);
+        sizePolicy13.setHorizontalStretch(0);
+        sizePolicy13.setVerticalStretch(6);
+        sizePolicy13.setHeightForWidth(PageText->sizePolicy().hasHeightForWidth());
+        PageText->setSizePolicy(sizePolicy13);
         PageText->setStyleSheet(QString::fromUtf8("color:black;\n"
 "border:0;\n"
 "color:black;\n"
@@ -475,308 +960,12 @@ public:
         verticalLayout_4->addWidget(PageText);
 
 
-        gridLayout_5->addWidget(widget_2, 1, 0, 4, 1);
+        gridLayout_5->addWidget(widget_2, 0, 0, 6, 1);
 
-        widget = new QWidget(Page);
-        widget->setObjectName("widget");
-        QSizePolicy sizePolicy9(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Preferred);
-        sizePolicy9.setHorizontalStretch(0);
-        sizePolicy9.setVerticalStretch(0);
-        sizePolicy9.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
-        widget->setSizePolicy(sizePolicy9);
-        widget->setMaximumSize(QSize(120, 16777215));
-        widget->setStyleSheet(QString::fromUtf8("QWidget{\n"
-"color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"background-color:gray;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-left: 1px black solid;\n"
-"border-top: 1px black solid;\n"
-"border-style:solid;\n"
-"}"));
-        verticalLayout_8 = new QVBoxLayout(widget);
-        verticalLayout_8->setObjectName("verticalLayout_8");
-        pushButton = new QPushButton(widget);
-        pushButton->setObjectName("pushButton");
-        QSizePolicy sizePolicy10(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Fixed);
-        sizePolicy10.setHorizontalStretch(0);
-        sizePolicy10.setVerticalStretch(0);
-        sizePolicy10.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
-        pushButton->setSizePolicy(sizePolicy10);
+        editPgBtn = new QPushButton(Page);
+        editPgBtn->setObjectName("editPgBtn");
 
-        verticalLayout_8->addWidget(pushButton);
-
-        widget_8 = new QWidget(widget);
-        widget_8->setObjectName("widget_8");
-        widget_8->setStyleSheet(QString::fromUtf8("QWidget{color:black;\n"
-"background-color:white;\n"
-"font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;}\n"
-"\n"
-"QPushButton{\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-style:solid;\n"
-"}"));
-        gridLayout_7 = new QGridLayout(widget_8);
-        gridLayout_7->setObjectName("gridLayout_7");
-        orangeBtn = new QPushButton(widget_8);
-        orangeBtn->setObjectName("orangeBtn");
-        orangeBtn->setMaximumSize(QSize(20, 20));
-        orangeBtn->setStyleSheet(QString::fromUtf8("background-color:orange"));
-
-        gridLayout_7->addWidget(orangeBtn, 4, 1, 1, 1);
-
-        purpleBtn = new QPushButton(widget_8);
-        purpleBtn->setObjectName("purpleBtn");
-        QSizePolicy sizePolicy11(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
-        sizePolicy11.setHorizontalStretch(0);
-        sizePolicy11.setVerticalStretch(0);
-        sizePolicy11.setHeightForWidth(purpleBtn->sizePolicy().hasHeightForWidth());
-        purpleBtn->setSizePolicy(sizePolicy11);
-        purpleBtn->setMaximumSize(QSize(20, 20));
-        purpleBtn->setStyleSheet(QString::fromUtf8("background-color:purple"));
-
-        gridLayout_7->addWidget(purpleBtn, 6, 1, 1, 1);
-
-        widget_9 = new QWidget(widget_8);
-        widget_9->setObjectName("widget_9");
-        QSizePolicy sizePolicy12(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Maximum);
-        sizePolicy12.setHorizontalStretch(0);
-        sizePolicy12.setVerticalStretch(0);
-        sizePolicy12.setHeightForWidth(widget_9->sizePolicy().hasHeightForWidth());
-        widget_9->setSizePolicy(sizePolicy12);
-        widget_9->setStyleSheet(QString::fromUtf8("border:0px;"));
-        verticalLayout_9 = new QVBoxLayout(widget_9);
-        verticalLayout_9->setObjectName("verticalLayout_9");
-        label = new QLabel(widget_9);
-        label->setObjectName("label");
-        sizePolicy2.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
-        label->setSizePolicy(sizePolicy2);
-        label->setStyleSheet(QString::fromUtf8("border:0;\n"
-"font: 8pt \"Sans Serif Collection\";"));
-
-        verticalLayout_9->addWidget(label);
-
-        textSize = new QLineEdit(widget_9);
-        textSize->setObjectName("textSize");
-        sizePolicy11.setHeightForWidth(textSize->sizePolicy().hasHeightForWidth());
-        textSize->setSizePolicy(sizePolicy11);
-        textSize->setMinimumSize(QSize(20, 0));
-        textSize->setMaximumSize(QSize(50, 20));
-        textSize->setStyleSheet(QString::fromUtf8("BORDER: 1px solid gray"));
-        textSize->setInputMethodHints(Qt::InputMethodHint::ImhDigitsOnly|Qt::InputMethodHint::ImhFormattedNumbersOnly);
-
-        verticalLayout_9->addWidget(textSize);
-
-
-        gridLayout_7->addWidget(widget_9, 0, 0, 1, 2);
-
-        pinkBtn = new QPushButton(widget_8);
-        pinkBtn->setObjectName("pinkBtn");
-        sizePolicy11.setHeightForWidth(pinkBtn->sizePolicy().hasHeightForWidth());
-        pinkBtn->setSizePolicy(sizePolicy11);
-        pinkBtn->setMaximumSize(QSize(20, 20));
-        pinkBtn->setStyleSheet(QString::fromUtf8("background-color:pink;"));
-
-        gridLayout_7->addWidget(pinkBtn, 7, 0, 1, 1);
-
-        brownBtn = new QPushButton(widget_8);
-        brownBtn->setObjectName("brownBtn");
-        sizePolicy11.setHeightForWidth(brownBtn->sizePolicy().hasHeightForWidth());
-        brownBtn->setSizePolicy(sizePolicy11);
-        brownBtn->setMaximumSize(QSize(20, 20));
-        brownBtn->setStyleSheet(QString::fromUtf8("background-color:brown;"));
-
-        gridLayout_7->addWidget(brownBtn, 7, 1, 1, 1);
-
-        blueBtn = new QPushButton(widget_8);
-        blueBtn->setObjectName("blueBtn");
-        sizePolicy11.setHeightForWidth(blueBtn->sizePolicy().hasHeightForWidth());
-        blueBtn->setSizePolicy(sizePolicy11);
-        blueBtn->setMaximumSize(QSize(20, 20));
-        blueBtn->setStyleSheet(QString::fromUtf8("background-color:blue;"));
-
-        gridLayout_7->addWidget(blueBtn, 6, 0, 1, 1);
-
-        line_4 = new QFrame(widget_8);
-        line_4->setObjectName("line_4");
-        line_4->setStyleSheet(QString::fromUtf8("border-left:0;\n"
-"border-right:0;\n"
-"border-bottom:0;"));
-        line_4->setFrameShape(QFrame::Shape::HLine);
-        line_4->setFrameShadow(QFrame::Shadow::Sunken);
-
-        gridLayout_7->addWidget(line_4, 3, 0, 1, 2);
-
-        greenBtn = new QPushButton(widget_8);
-        greenBtn->setObjectName("greenBtn");
-        sizePolicy11.setHeightForWidth(greenBtn->sizePolicy().hasHeightForWidth());
-        greenBtn->setSizePolicy(sizePolicy11);
-        greenBtn->setMaximumSize(QSize(20, 20));
-        greenBtn->setStyleSheet(QString::fromUtf8("background-color:green;"));
-
-        gridLayout_7->addWidget(greenBtn, 5, 1, 1, 1);
-
-        grayBtn = new QPushButton(widget_8);
-        grayBtn->setObjectName("grayBtn");
-        sizePolicy11.setHeightForWidth(grayBtn->sizePolicy().hasHeightForWidth());
-        grayBtn->setSizePolicy(sizePolicy11);
-        grayBtn->setMaximumSize(QSize(20, 20));
-        grayBtn->setStyleSheet(QString::fromUtf8("background-color:gray;"));
-
-        gridLayout_7->addWidget(grayBtn, 8, 1, 1, 1);
-
-        line_5 = new QFrame(widget_8);
-        line_5->setObjectName("line_5");
-        line_5->setStyleSheet(QString::fromUtf8("border-left:0;\n"
-"border-right:0;\n"
-"border-bottom:0;"));
-        line_5->setFrameShape(QFrame::Shape::HLine);
-        line_5->setFrameShadow(QFrame::Shadow::Sunken);
-
-        gridLayout_7->addWidget(line_5, 1, 0, 1, 2);
-
-        widget_10 = new QWidget(widget_8);
-        widget_10->setObjectName("widget_10");
-        sizePolicy12.setHeightForWidth(widget_10->sizePolicy().hasHeightForWidth());
-        widget_10->setSizePolicy(sizePolicy12);
-        widget_10->setStyleSheet(QString::fromUtf8("border:0;"));
-        gridLayout_8 = new QGridLayout(widget_10);
-        gridLayout_8->setObjectName("gridLayout_8");
-        underlineBtn = new QPushButton(widget_10);
-        underlineBtn->setObjectName("underlineBtn");
-        underlineBtn->setStyleSheet(QString::fromUtf8("text-decoration:underline;"));
-
-        gridLayout_8->addWidget(underlineBtn, 0, 2, 1, 1);
-
-        boldBtn = new QPushButton(widget_10);
-        boldBtn->setObjectName("boldBtn");
-        boldBtn->setStyleSheet(QString::fromUtf8("font-weight:bold;"));
-
-        gridLayout_8->addWidget(boldBtn, 0, 0, 1, 1);
-
-        italicBtn = new QPushButton(widget_10);
-        italicBtn->setObjectName("italicBtn");
-        italicBtn->setStyleSheet(QString::fromUtf8("font-style:italic;"));
-
-        gridLayout_8->addWidget(italicBtn, 0, 1, 1, 1);
-
-        pushButton_2 = new QPushButton(widget_10);
-        pushButton_2->setObjectName("pushButton_2");
-
-        gridLayout_8->addWidget(pushButton_2, 1, 0, 1, 1);
-
-        pushButton_3 = new QPushButton(widget_10);
-        pushButton_3->setObjectName("pushButton_3");
-
-        gridLayout_8->addWidget(pushButton_3, 1, 1, 1, 1);
-
-        pushButton_4 = new QPushButton(widget_10);
-        pushButton_4->setObjectName("pushButton_4");
-
-        gridLayout_8->addWidget(pushButton_4, 1, 2, 1, 1);
-
-
-        gridLayout_7->addWidget(widget_10, 2, 0, 1, 2);
-
-        label_2 = new QLabel(widget_8);
-        label_2->setObjectName("label_2");
-        sizePolicy2.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
-        label_2->setSizePolicy(sizePolicy2);
-        label_2->setStyleSheet(QString::fromUtf8("border:0;\n"
-"font: 8pt \"Sans Serif Collection\";"));
-
-        gridLayout_7->addWidget(label_2, 9, 0, 1, 2);
-
-        colorLine = new QLineEdit(widget_8);
-        colorLine->setObjectName("colorLine");
-        colorLine->setStyleSheet(QString::fromUtf8("font: 9pt \"Sans Serif Collection\";"));
-
-        gridLayout_7->addWidget(colorLine, 10, 0, 1, 2);
-
-        redBtn = new QPushButton(widget_8);
-        redBtn->setObjectName("redBtn");
-        sizePolicy11.setHeightForWidth(redBtn->sizePolicy().hasHeightForWidth());
-        redBtn->setSizePolicy(sizePolicy11);
-        redBtn->setMaximumSize(QSize(20, 20));
-        redBtn->setStyleSheet(QString::fromUtf8("background-color:red;"));
-
-        gridLayout_7->addWidget(redBtn, 4, 0, 1, 1);
-
-        yellowBtn = new QPushButton(widget_8);
-        yellowBtn->setObjectName("yellowBtn");
-        sizePolicy11.setHeightForWidth(yellowBtn->sizePolicy().hasHeightForWidth());
-        yellowBtn->setSizePolicy(sizePolicy11);
-        yellowBtn->setMaximumSize(QSize(20, 20));
-        yellowBtn->setStyleSheet(QString::fromUtf8("background-color:yellow"));
-
-        gridLayout_7->addWidget(yellowBtn, 5, 0, 1, 1);
-
-        blackBtn = new QPushButton(widget_8);
-        blackBtn->setObjectName("blackBtn");
-        sizePolicy11.setHeightForWidth(blackBtn->sizePolicy().hasHeightForWidth());
-        blackBtn->setSizePolicy(sizePolicy11);
-        blackBtn->setMaximumSize(QSize(20, 20));
-        blackBtn->setStyleSheet(QString::fromUtf8("background-color:black;"));
-
-        gridLayout_7->addWidget(blackBtn, 8, 0, 1, 1);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
-
-        gridLayout_7->addItem(verticalSpacer, 11, 0, 1, 2);
-
-
-        verticalLayout_8->addWidget(widget_8);
-
-        PageDiscard = new QPushButton(widget);
-        PageDiscard->setObjectName("PageDiscard");
-        sizePolicy5.setHeightForWidth(PageDiscard->sizePolicy().hasHeightForWidth());
-        PageDiscard->setSizePolicy(sizePolicy5);
-        PageDiscard->setStyleSheet(QString::fromUtf8(""));
-
-        verticalLayout_8->addWidget(PageDiscard);
-
-        PageSave = new QPushButton(widget);
-        PageSave->setObjectName("PageSave");
-        QSizePolicy sizePolicy13(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Fixed);
-        sizePolicy13.setHorizontalStretch(1);
-        sizePolicy13.setVerticalStretch(0);
-        sizePolicy13.setHeightForWidth(PageSave->sizePolicy().hasHeightForWidth());
-        PageSave->setSizePolicy(sizePolicy13);
-        PageSave->setStyleSheet(QString::fromUtf8(""));
-
-        verticalLayout_8->addWidget(PageSave);
-
-
-        gridLayout_5->addWidget(widget, 1, 1, 4, 1);
+        gridLayout_5->addWidget(editPgBtn, 1, 1, 1, 1);
 
         stackedWidget->addWidget(Page);
         Sitemap = new QWidget();
@@ -787,17 +976,13 @@ public:
         widget_6->setObjectName("widget_6");
         widget_6->setStyleSheet(QString::fromUtf8("color:black;\n"
 "background-color:white;\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+""));
         verticalLayout_7 = new QVBoxLayout(widget_6);
         verticalLayout_7->setObjectName("verticalLayout_7");
         SiteTitle = new QTextEdit(widget_6);
         SiteTitle->setObjectName("SiteTitle");
-        sizePolicy7.setHeightForWidth(SiteTitle->sizePolicy().hasHeightForWidth());
-        SiteTitle->setSizePolicy(sizePolicy7);
+        sizePolicy12.setHeightForWidth(SiteTitle->sizePolicy().hasHeightForWidth());
+        SiteTitle->setSizePolicy(sizePolicy12);
         SiteTitle->setMaximumSize(QSize(16777215, 60));
         SiteTitle->setStyleSheet(QString::fromUtf8("color:black;\n"
 "border:0;\n"
@@ -845,42 +1030,26 @@ public:
         gridLayout_4->setObjectName("gridLayout_4");
         CatRightBar = new QWidget(Category);
         CatRightBar->setObjectName("CatRightBar");
-        QSizePolicy sizePolicy16(QSizePolicy::Policy::Maximum, QSizePolicy::Policy::Preferred);
+        QSizePolicy sizePolicy16(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
         sizePolicy16.setHorizontalStretch(2);
         sizePolicy16.setVerticalStretch(7);
         sizePolicy16.setHeightForWidth(CatRightBar->sizePolicy().hasHeightForWidth());
         CatRightBar->setSizePolicy(sizePolicy16);
         CatRightBar->setMinimumSize(QSize(120, 0));
-        CatRightBar->setMaximumSize(QSize(120, 16777215));
+        CatRightBar->setMaximumSize(QSize(200, 16777215));
         CatRightBar->setStyleSheet(QString::fromUtf8("QWidget{\n"
+"background-color:rgb(206, 206, 206);\n"
 "color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
 "}\n"
-"\n"
 "QPushButton{\n"
-"color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
+"background-color:#e6e6e6;\n"
 "}\n"
-"\n"
 "QPushButton:pressed{\n"
 "background-color:gray;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-left: 1px black solid;\n"
-"border-top: 1px black solid;\n"
-"border-style:solid;\n"
+"}\n"
+"\n"
+"QPlainTextEdit{\n"
+"background-color:#e6e6e6;\n"
 "}"));
         verticalLayout_3 = new QVBoxLayout(CatRightBar);
         verticalLayout_3->setObjectName("verticalLayout_3");
@@ -897,12 +1066,7 @@ public:
         CatLineEdit->setObjectName("CatLineEdit");
         CatLineEdit->setStyleSheet(QString::fromUtf8("color:black;\n"
 "background-color:white;\n"
-"font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+""));
 
         verticalLayout_3->addWidget(CatLineEdit);
 
@@ -929,8 +1093,8 @@ public:
 
         CatAdd = new QPushButton(CatRightBar);
         CatAdd->setObjectName("CatAdd");
-        sizePolicy10.setHeightForWidth(CatAdd->sizePolicy().hasHeightForWidth());
-        CatAdd->setSizePolicy(sizePolicy10);
+        sizePolicy11.setHeightForWidth(CatAdd->sizePolicy().hasHeightForWidth());
+        CatAdd->setSizePolicy(sizePolicy11);
         CatAdd->setMinimumSize(QSize(0, 0));
         CatAdd->setMaximumSize(QSize(16777215, 90));
         CatAdd->setStyleSheet(QString::fromUtf8(""));
@@ -939,30 +1103,24 @@ public:
 
         CatDelete = new QPushButton(CatRightBar);
         CatDelete->setObjectName("CatDelete");
-        sizePolicy10.setHeightForWidth(CatDelete->sizePolicy().hasHeightForWidth());
-        CatDelete->setSizePolicy(sizePolicy10);
-        CatDelete->setStyleSheet(QString::fromUtf8(""));
+        sizePolicy11.setHeightForWidth(CatDelete->sizePolicy().hasHeightForWidth());
+        CatDelete->setSizePolicy(sizePolicy11);
+        CatDelete->setStyleSheet(QString::fromUtf8("padding-left:3px;\n"
+"padding-right:3px;"));
 
         verticalLayout_3->addWidget(CatDelete);
 
         CatDeleteFromWiki = new QPushButton(CatRightBar);
         CatDeleteFromWiki->setObjectName("CatDeleteFromWiki");
-        sizePolicy10.setHeightForWidth(CatDeleteFromWiki->sizePolicy().hasHeightForWidth());
-        CatDeleteFromWiki->setSizePolicy(sizePolicy10);
+        sizePolicy11.setHeightForWidth(CatDeleteFromWiki->sizePolicy().hasHeightForWidth());
+        CatDeleteFromWiki->setSizePolicy(sizePolicy11);
         CatDeleteFromWiki->setStyleSheet(QString::fromUtf8(""));
 
         verticalLayout_3->addWidget(CatDeleteFromWiki);
 
         CatResult = new QPlainTextEdit(CatRightBar);
         CatResult->setObjectName("CatResult");
-        CatResult->setStyleSheet(QString::fromUtf8("background-color:rgb(221, 221, 221);\n"
-"color:black;\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+        CatResult->setStyleSheet(QString::fromUtf8(""));
         CatResult->setReadOnly(true);
 
         verticalLayout_3->addWidget(CatResult);
@@ -973,18 +1131,13 @@ public:
         widget_4 = new QWidget(Category);
         widget_4->setObjectName("widget_4");
         widget_4->setStyleSheet(QString::fromUtf8("color:black;\n"
-"background-color:white;\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+"background-color:white;"));
         verticalLayout_6 = new QVBoxLayout(widget_4);
         verticalLayout_6->setObjectName("verticalLayout_6");
         CatTitle = new QTextEdit(widget_4);
         CatTitle->setObjectName("CatTitle");
-        sizePolicy7.setHeightForWidth(CatTitle->sizePolicy().hasHeightForWidth());
-        CatTitle->setSizePolicy(sizePolicy7);
+        sizePolicy12.setHeightForWidth(CatTitle->sizePolicy().hasHeightForWidth());
+        CatTitle->setSizePolicy(sizePolicy12);
         CatTitle->setMaximumSize(QSize(16777215, 60));
         CatTitle->setStyleSheet(QString::fromUtf8("color:black;\n"
 "border:0;\n"
@@ -1008,9 +1161,7 @@ public:
         CatList = new QListWidget(widget_4);
         new QListWidgetItem(CatList);
         CatList->setObjectName("CatList");
-        CatList->setStyleSheet(QString::fromUtf8("border:0;\n"
-"color:black;\n"
-"font: 9pt \"Sans Serif Collection\";"));
+        CatList->setStyleSheet(QString::fromUtf8(""));
 
         verticalLayout_6->addWidget(CatList);
 
@@ -1030,35 +1181,22 @@ public:
         sizePolicy17.setHeightForWidth(AllRightBar->sizePolicy().hasHeightForWidth());
         AllRightBar->setSizePolicy(sizePolicy17);
         AllRightBar->setMaximumSize(QSize(120, 16777215));
-        AllRightBar->setStyleSheet(QString::fromUtf8("QWidget{\n"
-"color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
-"}\n"
+        AllRightBar->setStyleSheet(QString::fromUtf8("QWidget{background-color:rgb(206, 206, 206);\n"
+"border-radius:5px;}\n"
 "\n"
 "QPushButton{\n"
-"color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
+"background-color: #e6e6e6;\n"
+"border-radius:5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
 "background-color:gray;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-left: 1px black solid;\n"
-"border-top: 1px black solid;\n"
-"border-style:solid;\n"
+"}\n"
+"\n"
+"QPlainTextEdit{\n"
+"background-color:#e6e6e6;\n"
+"color:black;\n"
+"border-radius:5px;\n"
 "}"));
         verticalLayout = new QVBoxLayout(AllRightBar);
         verticalLayout->setObjectName("verticalLayout");
@@ -1073,14 +1211,8 @@ public:
 
         AllLineEdit = new QLineEdit(AllRightBar);
         AllLineEdit->setObjectName("AllLineEdit");
-        AllLineEdit->setStyleSheet(QString::fromUtf8("color:black;\n"
-"background-color:white;\n"
-"font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+        AllLineEdit->setStyleSheet(QString::fromUtf8("border-radius:5px;\n"
+"background-color:white;"));
 
         verticalLayout->addWidget(AllLineEdit);
 
@@ -1098,14 +1230,7 @@ public:
 
         AllResult = new QPlainTextEdit(AllRightBar);
         AllResult->setObjectName("AllResult");
-        AllResult->setStyleSheet(QString::fromUtf8("background-color:rgb(221, 221, 221);\n"
-"color:black;\n"
-"font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+        AllResult->setStyleSheet(QString::fromUtf8(""));
         AllResult->setReadOnly(true);
 
         verticalLayout->addWidget(AllResult);
@@ -1115,20 +1240,14 @@ public:
 
         widget_3 = new QWidget(AllCategories);
         widget_3->setObjectName("widget_3");
-        widget_3->setStyleSheet(QString::fromUtf8("color:black;\n"
-"background-color:white;\n"
-"font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;"));
+        widget_3->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-radius:5px;"));
         verticalLayout_5 = new QVBoxLayout(widget_3);
         verticalLayout_5->setObjectName("verticalLayout_5");
         AllTitle = new QTextEdit(widget_3);
         AllTitle->setObjectName("AllTitle");
-        sizePolicy7.setHeightForWidth(AllTitle->sizePolicy().hasHeightForWidth());
-        AllTitle->setSizePolicy(sizePolicy7);
+        sizePolicy12.setHeightForWidth(AllTitle->sizePolicy().hasHeightForWidth());
+        AllTitle->setSizePolicy(sizePolicy12);
         AllTitle->setMaximumSize(QSize(16777215, 60));
         AllTitle->setStyleSheet(QString::fromUtf8("color:black;\n"
 "border:0;\n"
@@ -1141,9 +1260,7 @@ public:
         AllLine->setObjectName("AllLine");
         sizePolicy14.setHeightForWidth(AllLine->sizePolicy().hasHeightForWidth());
         AllLine->setSizePolicy(sizePolicy14);
-        AllLine->setStyleSheet(QString::fromUtf8("border-bottom:0;\n"
-"border-left:0;\n"
-"border-right:0;"));
+        AllLine->setStyleSheet(QString::fromUtf8(""));
         AllLine->setFrameShape(QFrame::Shape::HLine);
         AllLine->setFrameShadow(QFrame::Shadow::Sunken);
 
@@ -1164,7 +1281,8 @@ public:
         stackedWidget->addWidget(AllCategories);
         search = new QWidget();
         search->setObjectName("search");
-        search->setStyleSheet(QString::fromUtf8("background-color:white;"));
+        search->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"border-radius:5px;"));
         verticalLayout_10 = new QVBoxLayout(search);
         verticalLayout_10->setObjectName("verticalLayout_10");
         SearchTitle = new QLineEdit(search);
@@ -1201,30 +1319,17 @@ public:
         widget_11->setStyleSheet(QString::fromUtf8("QWidget{color:black;\n"
 "background-color:white;\n"
 "font: 11pt \"Sans Serif Collection\";\n"
-"border-right: 1px rgb(177, 177, 177) solid;\n"
-"border-bottom: 1px rgb(177, 177, 177) solid;\n"
-"border-left: 1px gray solid;\n"
-"border-top: 1px gray solid;\n"
-"border-style:solid;\n"
+"border-radius:5px;\n"
 "}\n"
+"\n"
 "QPushButton{\n"
 "color:black;\n"
-"background-color:rgb(177, 177, 177);\n"
-"font: 9pt \"Sans Serif Collection\";\n"
-"border-left: 1px white solid;\n"
-"border-top: 1px white solid;\n"
-"border-right: 1px gray solid;\n"
-"border-bottom: 1px gray solid;\n"
-"border-style:solid;\n"
+"background-color:#e6e6e6;\n"
+"border-radius:5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
 "background-color:gray;\n"
-"border-right: 1px white solid;\n"
-"border-bottom: 1px white solid;\n"
-"border-left: 1px black solid;\n"
-"border-top: 1px black solid;\n"
-"border-style:solid;\n"
 "}"));
         gridLayout_10 = new QGridLayout(widget_11);
         gridLayout_10->setObjectName("gridLayout_10");
@@ -1330,7 +1435,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 510, 17));
+        menubar->setGeometry(QRect(0, 0, 503, 17));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -1338,7 +1443,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(6);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1353,6 +1458,26 @@ public:
         SearchButton->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
         LeftButton->setText(QCoreApplication::translate("MainWindow", "<", nullptr));
         RightButton->setText(QCoreApplication::translate("MainWindow", ">", nullptr));
+        italicBtn_2->setText(QCoreApplication::translate("MainWindow", "I", nullptr));
+        centerBtn_2->setText(QCoreApplication::translate("MainWindow", "\342\230\260", nullptr));
+        leftBtn_2->setText(QCoreApplication::translate("MainWindow", "\342\206\220", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Text size:", nullptr));
+        underlineBtn_2->setText(QCoreApplication::translate("MainWindow", "U", nullptr));
+        redBtn_2->setText(QString());
+        blackBtn_2->setText(QString());
+        pinkBtn_2->setText(QString());
+        orangeBtn_2->setText(QString());
+        label_4->setText(QCoreApplication::translate("MainWindow", "Custom color:", nullptr));
+        colorLine_2->setText(QCoreApplication::translate("MainWindow", "#ffffff", nullptr));
+        greenBtn_2->setText(QString());
+        yellowBtn_2->setText(QString());
+        purpleBtn_2->setText(QString());
+        grayBtn_2->setText(QString());
+        boldBtn_2->setText(QCoreApplication::translate("MainWindow", "B", nullptr));
+        rightBtn_2->setText(QCoreApplication::translate("MainWindow", "\342\206\222", nullptr));
+        brownBtn_2->setText(QString());
+        blueBtn_2->setText(QString());
+        TitleSave->setText(QCoreApplication::translate("MainWindow", "Save Changes", nullptr));
         TitleDiscard->setText(QCoreApplication::translate("MainWindow", "Discard changes", nullptr));
         TitleText->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
@@ -1360,9 +1485,31 @@ public:
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Sans Serif Collection'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Calibri';\">Placeholder text</span></p></body></html>", nullptr));
-        TitleSave->setText(QCoreApplication::translate("MainWindow", "Save Changes", nullptr));
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Calibri'; font-size:11pt;\">Placeholder text</span></p></body></html>", nullptr));
+        homeEditBtn->setText(QCoreApplication::translate("MainWindow", "Edit", nullptr));
+        brownBtn->setText(QString());
+        label->setText(QCoreApplication::translate("MainWindow", "Text size:", nullptr));
+        colorLine->setText(QCoreApplication::translate("MainWindow", "#ffffff", nullptr));
+        greenBtn->setText(QString());
+        underlineBtn->setText(QCoreApplication::translate("MainWindow", "U", nullptr));
+        redBtn->setText(QString());
+        label_2->setText(QCoreApplication::translate("MainWindow", "Custom color:", nullptr));
+        yellowBtn->setText(QString());
+        pinkBtn->setText(QString());
+        italicBtn->setText(QCoreApplication::translate("MainWindow", "I", nullptr));
+        grayBtn->setText(QString());
+        purpleBtn->setText(QString());
+        orangeBtn->setText(QString());
+        blackBtn->setText(QString());
+        boldBtn->setText(QCoreApplication::translate("MainWindow", "B", nullptr));
+        blueBtn->setText(QString());
+        centerBtn->setText(QCoreApplication::translate("MainWindow", "\342\230\260", nullptr));
+        leftBtn->setText(QCoreApplication::translate("MainWindow", "\342\206\220", nullptr));
+        rightBtn->setText(QCoreApplication::translate("MainWindow", "\342\206\222", nullptr));
+        PageDiscard->setText(QCoreApplication::translate("MainWindow", "Discard changes", nullptr));
+        PageSave->setText(QCoreApplication::translate("MainWindow", "Save changes", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Gallery >", nullptr));
         PageTitle->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -1377,30 +1524,9 @@ public:
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Sans Serif Collection'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI'; font-size:9pt;\">&lt;b&gt;testing testing &lt;/b&gt;</span></p></body></html>", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Gallery >", nullptr));
-        orangeBtn->setText(QString());
-        purpleBtn->setText(QString());
-        label->setText(QCoreApplication::translate("MainWindow", "Text size:", nullptr));
-        pinkBtn->setText(QString());
-        brownBtn->setText(QString());
-        blueBtn->setText(QString());
-        greenBtn->setText(QString());
-        grayBtn->setText(QString());
-        underlineBtn->setText(QCoreApplication::translate("MainWindow", "U", nullptr));
-        boldBtn->setText(QCoreApplication::translate("MainWindow", "B", nullptr));
-        italicBtn->setText(QCoreApplication::translate("MainWindow", "I", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "a", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "a", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "a", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "Custom color:", nullptr));
-        colorLine->setText(QCoreApplication::translate("MainWindow", "#ffffff", nullptr));
-        redBtn->setText(QString());
-        yellowBtn->setText(QString());
-        blackBtn->setText(QString());
-        PageDiscard->setText(QCoreApplication::translate("MainWindow", "Discard changes", nullptr));
-        PageSave->setText(QCoreApplication::translate("MainWindow", "Save changes", nullptr));
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">&lt;b&gt;testing testing &lt;/b&gt;</p></body></html>", nullptr));
+        editPgBtn->setText(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         SiteTitle->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -1423,7 +1549,7 @@ public:
         CatAdd->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
         CatDelete->setText(QCoreApplication::translate("MainWindow", "Delete from category", nullptr));
         CatDeleteFromWiki->setText(QCoreApplication::translate("MainWindow", "Delete from wiki", nullptr));
-        CatResult->setPlainText(QCoreApplication::translate("MainWindow", "Testing testing testing", nullptr));
+        CatResult->setPlainText(QString());
         CatTitle->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

@@ -87,7 +87,30 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_GalleryAddBtn_clicked",
         "on_GalleryDeleteBtn_clicked",
         "on_galleryTable_itemDoubleClicked",
-        "QTableWidgetItem*"
+        "QTableWidgetItem*",
+        "on_editPgBtn_clicked",
+        "on_centerBtn_clicked",
+        "on_leftBtn_clicked",
+        "on_rightBtn_clicked",
+        "on_homeEditBtn_clicked",
+        "on_textSize_2_returnPressed",
+        "on_boldBtn_2_clicked",
+        "on_italicBtn_2_clicked",
+        "on_underlineBtn_2_clicked",
+        "on_centerBtn_2_clicked",
+        "on_leftBtn_2_clicked",
+        "on_rightBtn_2_clicked",
+        "on_redBtn_2_clicked",
+        "on_orangeBtn_2_clicked",
+        "on_yellowBtn_2_clicked",
+        "on_greenBtn_2_clicked",
+        "on_blueBtn_2_clicked",
+        "on_purpleBtn_2_clicked",
+        "on_pinkBtn_2_clicked",
+        "on_brownBtn_2_clicked",
+        "on_blackBtn_2_clicked",
+        "on_grayBtn_2_clicked",
+        "on_colorLine_2_returnPressed"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -193,6 +216,52 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void(QTableWidgetItem *)>(48, 2, QMC::AccessPrivate, QMetaType::Void, {{
             { 0x80000000 | 49, 11 },
         }}),
+        // Slot 'on_editPgBtn_clicked'
+        QtMocHelpers::SlotData<void()>(50, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_centerBtn_clicked'
+        QtMocHelpers::SlotData<void()>(51, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_leftBtn_clicked'
+        QtMocHelpers::SlotData<void()>(52, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_rightBtn_clicked'
+        QtMocHelpers::SlotData<void()>(53, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_homeEditBtn_clicked'
+        QtMocHelpers::SlotData<void()>(54, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_textSize_2_returnPressed'
+        QtMocHelpers::SlotData<void()>(55, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_boldBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(56, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_italicBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(57, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_underlineBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(58, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_centerBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(59, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_leftBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(60, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_rightBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(61, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_redBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(62, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_orangeBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(63, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_yellowBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(64, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_greenBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(65, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_blueBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(66, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_purpleBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(67, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_pinkBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(68, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_brownBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(69, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_blackBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(70, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_grayBtn_2_clicked'
+        QtMocHelpers::SlotData<void()>(71, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_colorLine_2_returnPressed'
+        QtMocHelpers::SlotData<void()>(72, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -259,6 +328,29 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 39: _t->on_GalleryAddBtn_clicked(); break;
         case 40: _t->on_GalleryDeleteBtn_clicked(); break;
         case 41: _t->on_galleryTable_itemDoubleClicked((*reinterpret_cast< std::add_pointer_t<QTableWidgetItem*>>(_a[1]))); break;
+        case 42: _t->on_editPgBtn_clicked(); break;
+        case 43: _t->on_centerBtn_clicked(); break;
+        case 44: _t->on_leftBtn_clicked(); break;
+        case 45: _t->on_rightBtn_clicked(); break;
+        case 46: _t->on_homeEditBtn_clicked(); break;
+        case 47: _t->on_textSize_2_returnPressed(); break;
+        case 48: _t->on_boldBtn_2_clicked(); break;
+        case 49: _t->on_italicBtn_2_clicked(); break;
+        case 50: _t->on_underlineBtn_2_clicked(); break;
+        case 51: _t->on_centerBtn_2_clicked(); break;
+        case 52: _t->on_leftBtn_2_clicked(); break;
+        case 53: _t->on_rightBtn_2_clicked(); break;
+        case 54: _t->on_redBtn_2_clicked(); break;
+        case 55: _t->on_orangeBtn_2_clicked(); break;
+        case 56: _t->on_yellowBtn_2_clicked(); break;
+        case 57: _t->on_greenBtn_2_clicked(); break;
+        case 58: _t->on_blueBtn_2_clicked(); break;
+        case 59: _t->on_purpleBtn_2_clicked(); break;
+        case 60: _t->on_pinkBtn_2_clicked(); break;
+        case 61: _t->on_brownBtn_2_clicked(); break;
+        case 62: _t->on_blackBtn_2_clicked(); break;
+        case 63: _t->on_grayBtn_2_clicked(); break;
+        case 64: _t->on_colorLine_2_returnPressed(); break;
         default: ;
         }
     }
@@ -283,14 +375,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 42)
+        if (_id < 65)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 42;
+        _id -= 65;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 42)
+        if (_id < 65)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 42;
+        _id -= 65;
     }
     return _id;
 }

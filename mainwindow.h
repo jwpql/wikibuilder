@@ -120,6 +120,52 @@ private slots:
 
     void on_galleryTable_itemDoubleClicked(QTableWidgetItem *item);
 
+    void on_editPgBtn_clicked();
+
+    void on_centerBtn_clicked();
+
+    void on_leftBtn_clicked();
+
+    void on_rightBtn_clicked();
+
+    void on_homeEditBtn_clicked();
+
+    void on_textSize_2_returnPressed();
+
+    void on_boldBtn_2_clicked();
+
+    void on_italicBtn_2_clicked();
+
+    void on_underlineBtn_2_clicked();
+
+    void on_centerBtn_2_clicked();
+
+    void on_leftBtn_2_clicked();
+
+    void on_rightBtn_2_clicked();
+
+    void on_redBtn_2_clicked();
+
+    void on_orangeBtn_2_clicked();
+
+    void on_yellowBtn_2_clicked();
+
+    void on_greenBtn_2_clicked();
+
+    void on_blueBtn_2_clicked();
+
+    void on_purpleBtn_2_clicked();
+
+    void on_pinkBtn_2_clicked();
+
+    void on_brownBtn_2_clicked();
+
+    void on_blackBtn_2_clicked();
+
+    void on_grayBtn_2_clicked();
+
+    void on_colorLine_2_returnPressed();
+
 private:
     Ui::MainWindow *ui;
 };

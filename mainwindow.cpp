@@ -17,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget->setCurrentIndex(0);
     string s = m.getText("Home");
     ui->TitleText->setHtml(QString::fromStdString(s));
+    ui->TitleText->setReadOnly(true);
+    ui->widget_10->hide();
 }
 
 MainWindow::~MainWindow()
@@ -70,6 +72,8 @@ void MainWindow::display(string name, string other){
     //0-home 1-page 2-sitemap 3-category 4-all categories
     if (name=="Home"){
         ui->stackedWidget->setCurrentIndex(0);
+        ui->TitleText->setReadOnly(true);
+        ui->widget_10->hide();
     }
     else if(name=="Sitemap"){
         ui->stackedWidget->setCurrentIndex(2);
@@ -167,6 +171,9 @@ void MainWindow::display(string name, string other){
             ui->PageTitle->setHtml(QString::fromStdString(name));
             string s = m.getText(name);
             ui->PageText->setText(QString::fromStdString(s));
+            ui->widget->hide();
+            ui->PageText->setReadOnly(true);
+            ui->PageTitle->setReadOnly(true);
         }
     }
 }
@@ -476,6 +483,37 @@ void MainWindow::on_textSize_returnPressed()
 }
 
 
+void MainWindow::on_centerBtn_clicked()
+{
+    ui->PageText->setAlignment(Qt::AlignCenter);
+}
+
+
+void MainWindow::on_leftBtn_clicked()
+{
+    ui->PageText->setAlignment(Qt::AlignLeft);
+}
+
+
+void MainWindow::on_rightBtn_clicked()
+{
+    ui->PageText->setAlignment(Qt::AlignRight);
+}
+
+void MainWindow::on_editPgBtn_clicked()
+{
+    if(ui->widget->isHidden()){
+        ui->widget->show();
+        ui->PageText->setReadOnly(false);
+        ui->PageTitle->setReadOnly(false);
+    }
+    else{
+        ui->widget->hide();
+        ui->PageText->setReadOnly(true);
+        ui->PageTitle->setReadOnly(true);
+    }
+}
+
 //Sitemap==================================================
 
 void MainWindow::on_SiteList_itemDoubleClicked(QListWidgetItem *item)
@@ -635,3 +673,209 @@ void MainWindow::on_galleryTable_itemDoubleClicked(QTableWidgetItem *item)
 // {
 //     //um
 // }
+
+//home page text edit
+
+void MainWindow::on_homeEditBtn_clicked()
+{
+    if(ui->widget_10->isHidden()){
+        ui->widget_10->show();
+        ui->TitleText->setReadOnly(false);
+    }
+    else{
+        ui->widget_10->hide();
+        ui->TitleText->setReadOnly(true);
+    }
+}
+
+
+void MainWindow::on_textSize_2_returnPressed()
+{
+    string s = ui->textSize_2->text().toStdString();
+    if (s.size() > 3){
+        return;
+    }
+    for (int i = 0; i<s.size(); i++){
+        if (!isdigit(s[i])){
+            return;
+        }
+    }
+
+    int num = stoi(s);
+    if (num < 1){
+        return;
+    }
+
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setFontPointSize(num);
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_boldBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+
+    if (format.font().bold()) {
+        format.setFontWeight(QFont::Normal);
+    } else {
+        format.setFontWeight(QFont::Bold);
+    }
+
+    cursor.mergeCharFormat(format);
+    ui->TitleText->setTextCursor(cursor);
+}
+
+
+void MainWindow::on_italicBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+
+    if (format.fontItalic()) {
+        format.setFontItalic(false);
+    } else {
+        format.setFontItalic(true);
+    }
+
+    cursor.mergeCharFormat(format);
+    ui->TitleText->setTextCursor(cursor);
+}
+
+
+void MainWindow::on_underlineBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+
+    if (format.fontUnderline()) {
+        format.setFontUnderline(false);
+    } else {
+        format.setFontUnderline(true);
+    }
+
+    cursor.mergeCharFormat(format);
+    ui->TitleText->setTextCursor(cursor);
+}
+
+
+void MainWindow::on_centerBtn_2_clicked()
+{
+    ui->TitleText->setAlignment(Qt::AlignCenter);
+}
+
+
+void MainWindow::on_leftBtn_2_clicked()
+{
+    ui->TitleText->setAlignment(Qt::AlignLeft);
+}
+
+
+void MainWindow::on_rightBtn_2_clicked()
+{
+    ui->TitleText->setAlignment(Qt::AlignRight);
+}
+
+
+void MainWindow::on_redBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("red")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_orangeBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("orange")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_yellowBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("yellow")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_greenBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("green")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_blueBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("blue")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_purpleBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("purple")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_pinkBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("pink")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_brownBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("brown")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_blackBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("black")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_grayBtn_2_clicked()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    format.setForeground(QBrush(QColor("gray")));
+    cursor.setCharFormat( format );
+}
+
+
+void MainWindow::on_colorLine_2_returnPressed()
+{
+    auto cursor = ui->TitleText->textCursor();
+    QTextCharFormat format = cursor.charFormat();
+    QString colorName = ui->colorLine_2->text();
+    QColor color = QColor::fromString(colorName);
+    format.setForeground(QBrush(color));
+    cursor.setCharFormat( format );
+}
+
