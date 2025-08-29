@@ -38,7 +38,7 @@ public:
     {
         if (Modal->objectName().isEmpty())
             Modal->setObjectName("Modal");
-        Modal->resize(414, 374);
+        Modal->resize(574, 441);
         Modal->setStyleSheet(QString::fromUtf8("QWidget{\n"
 "background-color:rgb(177, 177, 177);\n"
 "}\n"
@@ -69,6 +69,7 @@ public:
         sizePolicy.setHeightForWidth(modalScrollArea->sizePolicy().hasHeightForWidth());
         modalScrollArea->setSizePolicy(sizePolicy);
         modalScrollArea->setStyleSheet(QString::fromUtf8("background-color:white;\n"
+"text-align:center;\n"
 ""));
         modalScrollArea->setFrameShape(QFrame::Shape::NoFrame);
         modalScrollArea->setFrameShadow(QFrame::Shadow::Plain);
@@ -79,13 +80,14 @@ public:
         modalScrollArea->setAlignment(Qt::AlignmentFlag::AlignCenter);
         modalScrollAreaContents = new QWidget();
         modalScrollAreaContents->setObjectName("modalScrollAreaContents");
-        modalScrollAreaContents->setGeometry(QRect(0, 0, 354, 362));
+        modalScrollAreaContents->setGeometry(QRect(0, 0, 514, 429));
         QSizePolicy sizePolicy1(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(modalScrollAreaContents->sizePolicy().hasHeightForWidth());
         modalScrollAreaContents->setSizePolicy(sizePolicy1);
-        modalScrollAreaContents->setStyleSheet(QString::fromUtf8("background-color:rgb(177, 177, 177);"));
+        modalScrollAreaContents->setStyleSheet(QString::fromUtf8("background-color:rgb(177, 177, 177);\n"
+"text-align:center;"));
         verticalLayout = new QVBoxLayout(modalScrollAreaContents);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -94,7 +96,8 @@ public:
         sizePolicy.setHeightForWidth(modalLabel->sizePolicy().hasHeightForWidth());
         modalLabel->setSizePolicy(sizePolicy);
         modalLabel->setStyleSheet(QString::fromUtf8("border:0;\n"
-"background-color:blue"));
+"background-color:blue;\n"
+"text-align:center;"));
         modalLabel->setLineWidth(0);
 
         verticalLayout->addWidget(modalLabel);
@@ -139,7 +142,7 @@ public:
     {
         Modal->setWindowTitle(QCoreApplication::translate("Modal", "Dialog", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Modal", ".", nullptr));
-        modalLabel->setText(QCoreApplication::translate("Modal", "TextLabel", nullptr));
+        modalLabel->setText(QCoreApplication::translate("Modal", "help", nullptr));
         pushButton->setText(QCoreApplication::translate("Modal", ".", nullptr));
         modalBackBtn->setText(QCoreApplication::translate("Modal", "<", nullptr));
         modalForwardBtn->setText(QCoreApplication::translate("Modal", ">", nullptr));

@@ -291,12 +291,18 @@ bool Maps::removeFromWiki(string name){
     }
     std::remove(sitemap[name].c_str());
     sitemap.erase(name);
+    //deleting category
     if (categories.find(name) != categories.end()){
         for (int i = 0; i<categories[name].size(); i++){
+            //delete category from page
             deleteFromVector(&pages[categories[name][i]], name);
+        }
+        for (auto i = categories.begin(); i != categories.end(); i++){
+            deleteFromVector(&i->second, name);
         }
         categories.erase(name);
     }
+    //deleting page
     if (pages.find(name) != pages.end()){
         for(int i = 0; i < pages[name].size(); i++){
             deleteFromVector(&categories[pages[name][i]], name);

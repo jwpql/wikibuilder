@@ -1,3 +1,2 @@
-Characters,Main Characters,Mela,Songyun,Yue Yuan
-Locations,Taiyue
-Main Characters,Mela,Yue Yuan
+Characters,Sample,Main characters
+Main characters,Sample

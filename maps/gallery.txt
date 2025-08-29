@@ -1,3 +1,2 @@
 Gallery,
-Koga,../../data/img/Koga0.jpg,
-Yue Yuan,../../data/img/YueYuan1.jpg,../../data/img/YueYuan2.jpg,../../data/img/YueYuan3.jpg,../../data/img/YueYuan4.jpg,../../data/img/YueYuan6.jpg,../../data/img/YueYuan7.jpg,
+Sample,../../data/img/Sample0.jpg,../../data/img/Sample1.jpg,

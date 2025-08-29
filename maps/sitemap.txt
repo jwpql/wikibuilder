@@ -1,10 +1,4 @@
-All,../../data/c_all.txt
 Characters,../../data/c_characters.txt
 Home,../../data/home.txt
-Koga,../../data/p_koga.txt
-Locations,../../data/c_locations.txt
-Main Characters,../../data/c_maincharacters.txt
-Mela,../../data/p_mela.txt
-Songyun,../../data/p_songyun.txt
-Taiyue,../../data/p_taiyue.txt
-Yue Yuan,../../data/p_yueyuan.txt
+Main characters,../../data/c_maincharacters.txt
+Sample,../../data/p_sample.txt

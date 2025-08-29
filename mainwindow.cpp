@@ -281,6 +281,7 @@ void MainWindow::on_AllDelete_clicked()
             m.updateMaps();
         }
     }
+    display("AllCategories");
 }
 
 void MainWindow::on_AllList_itemDoubleClicked(QListWidgetItem *item)

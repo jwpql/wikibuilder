@@ -33,6 +33,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         gallery.h
         maps/gallery.txt
         modal.h modal.cpp modal.ui
+        .gitignore
         # data/c_characters.txt
         # data/c_maincharacters.txt
         # data/p_yueyuan.txt
