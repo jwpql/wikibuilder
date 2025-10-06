@@ -19,6 +19,7 @@ public:
     string sitemapPath;
     string categoryPath;
     string pagesPath;
+    string homePath;
 
     //stores page/category links, file locations
     map<string, string> sitemap;
@@ -30,7 +31,7 @@ public:
     map<string, vector<string>> constructCategories() const;
     map<string, vector<string>> constructPages() const;
 
-    Maps(const string& site, const string& category, const string& page);
+    Maps(const string& site, const string& category, const string& page, const string& home);
     Maps();
 
     //might have to modify path in final. check validtitle before using. char should be c or p

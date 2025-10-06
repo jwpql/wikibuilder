@@ -1,2 +1,2 @@
 Characters,Sample,Main characters
-Main characters,Sample
+Main characters

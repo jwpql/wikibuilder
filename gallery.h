@@ -10,11 +10,12 @@ using namespace std;
 class Gallery{
 public:
     map<string, vector<string>> galleryMap;
-    string path;
+    string path; //path to txt file with image names
+    string homePath;
 
     //constructing
     Gallery(); //never call this ever
-    explicit Gallery(string path);
+    explicit Gallery(string path, string homePath);
     map<string, vector<string>> constructImgMap() const;
 
     //adding images

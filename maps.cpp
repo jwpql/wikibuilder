@@ -112,28 +112,24 @@ map<string,vector<string>> Maps::constructPages() const{
     return result;
 }
 
-Maps::Maps(const string& site, const string& category, const string& page){
+Maps::Maps(const string& site, const string& category, const string& page, const string& home){
     sitemapPath = site;
     categoryPath = category;
     pagesPath = page;
     sitemap = constructSitemap();
     categories = constructCategories();
     pages = constructPages();
+    homePath = home;
 }
 
 Maps::Maps(){
-    sitemapPath = "../../maps/sitemap.txt";
-    categoryPath = "../../maps/categories.txt";
-    pagesPath = "../../maps/pages.txt";
-    sitemap = constructSitemap();
-    categories = constructCategories();
-    pages = constructPages();
+
 }
 
 //making and checking file names========================================================
 string Maps::makeFileName(string name, char type){ //assumes valid name
     string result = "";
-    result = result + "../../data/" + type + "_";
+    result = result + homePath + "/" + type + "_";
     for (int i = 0; i < name.length(); i++)
     {
         if(isalpha(name[i]) || isdigit(name[i])){
@@ -170,13 +166,14 @@ bool Maps::fileDoesntExist(string name, char c){
 }
 
 bool Maps::isPage(string name){
+    int i = homePath.length() + 1;
     if(sitemap.find(name)==sitemap.end()){
         return false;
     }
-    if(sitemap[name].length()<11){
+    if(sitemap[name].length()<1){
         return false;
     }
-    if(sitemap[name][11]=='p'){
+    if(sitemap[name][i]=='p'){
         return true;
     }
     return false;
