@@ -4,13 +4,33 @@
 #include <QMessageBox>
 #include "gallery.h"
 #include "modal.h"
+#include <QStandardPaths>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    m = Maps("../../maps/sitemap.txt", "../../maps/categories.txt", "../../maps/pages.txt");
-    g = Gallery("../../maps/gallery.txt");
+    //changing paths
+    QString dataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+
+    if(!QDir(dataPath).exists()){
+        QDir().mkdir(dataPath);
+    }
+
+    string sitemapPath = dataPath.toStdString() + "/sitemap.txt";
+    string categoriesPath = dataPath.toStdString() + "/categories.txt";
+    string pagesPath = dataPath.toStdString() + "/pages.txt";
+    string galleryPath = dataPath.toStdString() + "/gallery.txt";
+    m = Maps(sitemapPath, categoriesPath, galleryPath, dataPath.toStdString());
+    g = Gallery(galleryPath, dataPath.toStdString());
+
+    //old code
+    //m = Maps("../../maps/sitemap.txt", "../../maps/categories.txt", "../../maps/pages.txt");
+    //g = Gallery("../../maps/gallery.txt");
+
+    m.createPage("Home");
+    m.updateMaps();
+
     currentPage = "Home";
     //back.push(make_pair("Home", ""));
     ui->setupUi(this);
@@ -154,7 +174,7 @@ void MainWindow::display(string name, string other){
         }
     }
     else if (m.sitemap.find(name) != m.sitemap.end()){
-        char type = m.sitemap[name][11];
+        char type = m.sitemap[name][m.homePath.size() + 1];
         if(type=='c'){ //display category
             ui->stackedWidget->setCurrentIndex(3);
             ui->CatList->clear();
@@ -626,11 +646,11 @@ void MainWindow::on_GalleryAddBtn_clicked()
     string pageName = ui->galleryTitle->text().toStdString();
     QString filter = "PNG (*.png) ;; JPG (*.jpg) ;; JPEG (*.jpeg)";
     QString fileName = QFileDialog::getOpenFileName(this, "Select an image", "C://", filter);
-    //QMessageBox::information(this, "..", fileName); //for testing
     bool result = g.addImage(pageName, fileName.toStdString());
     if(result){
         display("Gallery", pageName);
     }
+    string s = g.makeFileName("page name", fileName.toStdString());
 }
 
 void MainWindow::on_GalleryDeleteBtn_clicked()

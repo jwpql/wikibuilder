@@ -9,9 +9,10 @@ Gallery::Gallery()
     galleryMap = constructImgMap();
 }
 
-Gallery::Gallery(string pathName){
+Gallery::Gallery(string pathName, string home){
     path = pathName;
     galleryMap=constructImgMap();
+    homePath = home;
 };
 
 map<string, vector<string>> Gallery::constructImgMap() const{
@@ -58,9 +59,9 @@ map<string, vector<string>> Gallery::constructImgMap() const{
 //gallery functions
 string Gallery::makeFileName(string pageName, string imgSrc)
 {
-    //naming scheme - page name + number (ex. YueYuan0.jpg)
+    //naming scheme - page name + number (ex. .../YueYuan0.jpg)
     //file path format - data/img/img.txt
-    string s = "../../data/img/";
+    string s = homePath + "/";
     for (int i = 0; i < pageName.length(); i++){
         if (isalnum(pageName[i])){
             s += pageName[i];
@@ -100,7 +101,7 @@ string Gallery::makeFileName(string pageName, string imgSrc)
             break;
         }
     }
-    return s + to_string(i) + end;;
+    return s + to_string(i) + end;
 }
 
 bool Gallery::addImage(string pageName, string imgSrc){
@@ -110,6 +111,7 @@ bool Gallery::addImage(string pageName, string imgSrc){
     const string fileName = makeFileName(pageName, imgSrc);
     const filesystem::path from = imgSrc;
     const filesystem::path to = fileName;
+    cout<<imgSrc << " | " << fileName << endl;
     bool result = true;
     try
     {

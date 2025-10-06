@@ -1,0 +1,12 @@
+# ninja log v6
+14	2184	7814736898522296	wikibuilder_autogen/timestamp	b612be1363ec0abc
+14	2184	7814736898522296	wikibuilder_autogen/mocs_compilation.cpp	b612be1363ec0abc
+14	2184	7814736898522296	C:/Users/wujul/OneDrive/Documents/wikibuilder/build/Desktop_Qt_6_9_0_MinGW_64_bit-Release/wikibuilder_autogen/timestamp	b612be1363ec0abc
+14	2184	7814736898522296	C:/Users/wujul/OneDrive/Documents/wikibuilder/build/Desktop_Qt_6_9_0_MinGW_64_bit-Release/wikibuilder_autogen/mocs_compilation.cpp	b612be1363ec0abc
+2216	13488	7814736900782066	CMakeFiles/wikibuilder.dir/maps.cpp.obj	5b7985287b7e446d
+2222	13586	7814736900844793	CMakeFiles/wikibuilder.dir/gallery.cpp.obj	d17cdc28265b76f6
+2228	15279	7814736900905285	CMakeFiles/wikibuilder.dir/modal.cpp.obj	dfc6cf5af26d7230
+2204	16900	7814736900657665	CMakeFiles/wikibuilder.dir/main.cpp.obj	5b9ebeab1583a8e0
+2197	17550	7814736900596934	CMakeFiles/wikibuilder.dir/wikibuilder_autogen/mocs_compilation.cpp.obj	9e8de4e0fbe4e6a8
+2210	26581	7814736900726748	CMakeFiles/wikibuilder.dir/mainwindow.cpp.obj	549bac636087e1d4
+26582	27529	7814737144444730	wikibuilder.exe	56b3bf84dac1898f
