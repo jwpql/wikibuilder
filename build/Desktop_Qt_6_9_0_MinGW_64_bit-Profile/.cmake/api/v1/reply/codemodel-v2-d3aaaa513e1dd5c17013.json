@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-3c344377c8464c774b43.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wikibuilder",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "wikibuilder::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wikibuilder-RelWithDebInfo-b7638500f1dda0cc16a1.json",
+					"name" : "wikibuilder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wikibuilder_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wikibuilder_autogen-RelWithDebInfo-8637bbc40b3030de1322.json",
+					"name" : "wikibuilder_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wikibuilder_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wikibuilder_autogen_timestamp_deps-RelWithDebInfo-29eb2c27141d0a7cf71f.json",
+					"name" : "wikibuilder_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/wujul/OneDrive/Documents/wikibuilder/build/Desktop_Qt_6_9_0_MinGW_64_bit-Profile",
+		"source" : "C:/Users/wujul/OneDrive/Documents/wikibuilder"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

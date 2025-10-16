@@ -1,4 +1,0 @@
-Characters,../../data/c_characters.txt
-Home,../../data/home.txt
-Main characters,../../data/c_maincharacters.txt
-Sample,../../data/p_sample.txt
