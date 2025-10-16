@@ -25,13 +25,13 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         maps.h maps.cpp
 
-        data/home.txt
 
-        maps/sitemap.txt
-        maps/pages.txt
+
+
+
         gallery.cpp
         gallery.h
-        maps/gallery.txt
+
         modal.h modal.cpp modal.ui
         .gitignore
         # data/c_characters.txt

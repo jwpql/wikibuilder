@@ -278,6 +278,7 @@ void MainWindow::on_AllAdd_clicked()
         for(auto i = m.categories.begin(); i != m.categories.end(); i++){
             QListWidgetItem* item = new QListWidgetItem(QString::fromStdString(i->first), ui->AllList);
             ui->AllList->addItem(item);
+            item->setForeground(QBrush(QColor("blue")));
         }
     }
 }
@@ -650,7 +651,7 @@ void MainWindow::on_GalleryAddBtn_clicked()
     if(result){
         display("Gallery", pageName);
     }
-    string s = g.makeFileName("page name", fileName.toStdString());
+    //string s = g.makeFileName(pageName, fileName.toStdString());
 }
 
 void MainWindow::on_GalleryDeleteBtn_clicked()

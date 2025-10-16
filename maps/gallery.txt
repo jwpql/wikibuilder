@@ -1,2 +1,0 @@
-Gallery,
-Sample,../../data/img/Sample0.jpg,../../data/img/Sample1.jpg,
